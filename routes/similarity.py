@@ -82,7 +82,7 @@ def add_vehicle(vehicle_data: dict):
 
     calculate_cosine_similarity()
 
-    return {"message": f"the product has been { 'updated' if product_exists else 'added' }"}
+    return {"message": f"the product has been { 'updated' if vehicle_exists else 'added' }"}
 
 
 @router.delete("/vehicles/{vehicle_id}")
